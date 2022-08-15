@@ -1,0 +1,255 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F3F5FC;
+    position: relative;
+    height: 1024px;
+    width: 1440px;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #0A3871;
+    margin: 0 5px 2em 0;
+    text-decoration: underline black;
+}
+
+.logo{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 45px;
+    top: 45px;
+}
+
+.input-text{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #0A3871;
+    border: none;
+    width: 70%;
+    height: 30rem;
+    max-width: 120rem;
+    resize: none;
+    background-color: #F3F5FC;
+    position: absolute;
+    top: 160px;
+    left: 400px;
+}
+
+.input-text::placeholder{
+    color: #0A3871;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 400px;
+    top: 885px;
+}
+
+.boton-encriptar{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 336px;
+    height: 67px;
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    width: 280px;
+    height: 19px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20%;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.boton-encriptar:hover{
+    cursor: pointer;
+    background-color: #F3F5FC;
+    color: black;
+    border: 1px solid #000;
+}
+
+.boton-desencriptar{
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 336px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    width: 280px;
+    height: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20%;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.boton-desencriptar:hover {
+    cursor: pointer;
+    background-color: #E5E5E5;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.alertaTexto {
+    font-size: 15px;
+    position: absolute;
+    left: 405px;
+    top: 850px;
+}
+
+.alertaTexto:before{
+    content: url(Fotos/advertencia.png);
+}
+
+.contenedor-texto{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1440px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.mensajeOut{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 336px;
+    height: 131px;
+    left: 32px;
+    top: 619px;
+    text-align: center;
+}
+
+#out{
+    width: 336px;
+    height: 58px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mensaje{
+    width: 336px;
+    height: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.boton-copiar{
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 15%;
+    top: 845px;  
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 288px;
+    height: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20%;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.boton-copiar:hover{
+    cursor: pointer;
+    background-color: #E5E5E5;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.pie{
+    position: absolute;
+    top: 1000px;
+    left: 470px;
+    font-size: 24px;
+    color: #0A3871;
+}
+
+/* FORMATO TABLET */
+@media  screen and (min-width: 768px) {
+    
+}
+
+/* FORMATO CELULAR */
+@media screen and (max-width: 480px){
+    
+}

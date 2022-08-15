@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Fotos/Vector.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Challenge encriptador alura</title>
+    </head>
+    
+    <body>
+
+        <header class="encabezado-principal">
+            <h1 class="titulo">Encriptador de mensajes</h1>
+            <img class="logo" src="Fotos/Vector.png" alt="Logo alura">
+        </header>
+
+        <main class="contenedor-principal">
+
+            <section class="contenedor-desencriptar">
+                <div class="input">
+                    <textarea id="texto-input" class="input-text" cols="30" rows="10" placeholder="Ingrese su texto aquí"></textarea>
+                </div>
+                <span class="alertaTexto"> Solo letras minúsculas y sin acentos</span>
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="contenedor-texto">
+                <div class="mensajeOut">
+                    <p id="out">Ningún mensaje fue encontrado</p>
+                    <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <img class="munieco" src="Fotos/Muñeco.png" alt="Personaje mirando tu texto traducido">
+                <div class="clasebotoncopiar">
+                    <button class="boton-copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>    
+
+        </main>
+
+        <footer class="pie">
+            Diseñado por
+            <a href="https://www.aluracursos.com/" target="_blank">Alura.</a>
+            Codeado por
+            <a href="https://github.com/Mrtn1202" target="_blank">Martín iturri</a>
+        </footer>
+        
+        <script src="Encriptador.js"></script>     
+
+    </body>
+</html>
+
