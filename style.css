@@ -30,7 +30,7 @@ body{
     font-weight: bold;
     color: #0A3871;
     border: none;
-    width: 70%;
+    width: 50%;
     height: 30rem;
     max-width: 120rem;
     resize: none;
@@ -239,114 +239,4 @@ body{
     left: 470px;
     font-size: 24px;
     color: #0A3871;
-}
-
-/* FORMATO TABLET */
-@media  screen and (min-width: 768px) {
-    
-    .titulo{
-        text-align: center;
-    }
-
-    .logo{
-        position: absolute;
-        width: 31.09px;
-        height: 50.58px;
-        left: 45px;
-        top: 73.42px;
-    }
-
-    .input-text{
-        position: absolute;
-        width: 688px;
-        height: 48px;
-        left: 70px;
-        top: 240px;
-    }
-
-    .botones{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 24px;
-
-        position: absolute;
-        width: 688px;
-        height: 67px;
-        left: 65px;
-        top: 870px;
-    }
-
-    .boton-encriptar{
-        width: 332px;
-        height: 67px;
-    }
-
-    .boton-desencriptar{
-        width: 332px;
-        height: 67px; 
-    }
-
-    .alertaTexto{
-        left: 70px;
-    }
-
-    .contenedor-texto{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 32px;
-        gap: 32px;
-        position: absolute;
-        width: 688px;
-        height: 133px;
-        left: 40px;
-        top: 1001px;
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-        border-radius: 32px;
-    }
-
-    .mensajeOut{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 16px;
-        width: 20px;
-        height: 69px;
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
-    }
-
-    .munieco{
-        display: none;
-    }
-
-    .boton-copiar{
-        position: absolute;
-        left: 7.5%;
-        top: 100px;
-        width: 624px;
-        height: 67px;
-        border: 1px solid #0A3871;
-        border-radius: 24px;
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 0;
-    }
-
-    .pie{
-        left: 135px;
-        top: 950px;
-    }
-  
-}
-
-/* FORMATO CELULAR */
-@media screen and (max-width: 480px){
-    
 }
