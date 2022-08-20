@@ -199,6 +199,13 @@ body{
     flex-grow: 0;
 }
 
+.munieco{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    right: 40px;
+}
+
 .boton-copiar{
     box-sizing: border-box;
     flex-direction: row;
@@ -235,7 +242,7 @@ body{
 
 .pie{
     position: absolute;
-    top: 1000px;
+    top: 99%;
     left: 470px;
     font-size: 24px;
     color: #0A3871;

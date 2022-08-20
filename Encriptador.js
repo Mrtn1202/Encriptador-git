@@ -1,9 +1,9 @@
 let mensaje = document.querySelector("#texto-input");
-let salida = document.querySelector(".mensajeOut");
+let salida = document.querySelector(".mensajeOut").style.display = "block";
 
 let btnEncriptar = document.querySelector(".boton-encriptar");
 let btnDesencriptar = document.querySelector(".boton-desencriptar");
-let btnCopiar = document.querySelector(".boton-copiar");
+let btnCopiar = document.querySelector(".boton-copiar").style.display = "none";
 
 let noAceptable = "ABCDEFGHIJKLMNOPQRSTUVWXYZáéíóú0123456789";
 
@@ -37,6 +37,7 @@ function encriptar(){
 
         document.querySelector(".mensajeOut").innerHTML = textoEncriptado;    
         mensaje.value = "";
+        document.querySelector(".boton-copiar").style.display = "block";
         return textoEncriptado;
     }
 }
@@ -60,6 +61,7 @@ function desencriptar(){
 
         document.querySelector(".mensajeOut").innerHTML = textoDesencriptado;   
         mensaje.value = "";
+        document.querySelector(".boton-copiar").style.display = "block";
         return textoDesencriptado;
     }
 }
@@ -77,4 +79,5 @@ function copiar(){
     document.execCommand("copy");
     document.body.removeChild(hide);
     document.querySelector(".mensajeOut").innerHTML = "";
+    document.querySelector(".boton-copiar").style.display = "none";
 }
